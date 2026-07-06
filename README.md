@@ -1,8 +1,8 @@
 # Screen Hider
 
-Oculta ventanas específicas de la **compartición de pantalla y las grabaciones**, en tiempo real. La ventana sigue visible para vos en tu monitor, pero **desaparece de lo que ven los demás** en una videollamada (Meet, Zoom, Teams, Discord…).
+Oculta ventanas específicas de la **compartición de pantalla y las grabaciones**, en tiempo real. La ventana sigue visible para ti en tu monitor, pero **desaparece de lo que ven los demás** en una videollamada (Meet, Zoom, Teams, Discord…).
 
-Ideal para dejar a la vista un Excel, un documento o notas mientras compartís pantalla completa, sin que el resto lo vea.
+Ideal para dejar a la vista un Excel, un documento o notas mientras compartes pantalla completa, sin que el resto lo vea.
 
 ---
 
@@ -20,18 +20,18 @@ Ideal para dejar a la vista un Excel, un documento o notas mientras compartís p
 
 ## Descargar y usar
 
-1. Bajá el `.zip` de la última **[Release](../../releases/latest)**.
-2. Descomprimí la carpeta completa (los 3 archivos tienen que quedar juntos).
-3. Ejecutá **`ui.exe`**.
+1. Descarga el `.zip` de la última **[Release](../../releases/latest)**.
+2. Descomprime la carpeta completa (los 3 archivos deben quedar juntos).
+3. Ejecuta **`ui.exe`**.
 
 ### ⚠️ Aviso sobre el antivirus
 
 Screen Hider usa **inyección de DLL**, una técnica legítima pero que los antivirus asocian con software malicioso. Es esperable que:
 
-- **SmartScreen** muestre *"Windows protegió tu PC – editor desconocido"* → clic en **Más información → Ejecutar de todas formas**.
-- **Windows Defender** lo marque y lo ponga en cuarentena → hay que **permitir / restaurar** el archivo.
+- **SmartScreen** muestre *"Windows protegió tu PC – editor desconocido"* → haz clic en **Más información → Ejecutar de todas formas**.
+- **Windows Defender** lo marque y lo ponga en cuarentena → debes **permitir / restaurar** el archivo.
 
-No es un virus: el código es abierto y podés revisar exactamente qué hace. El aviso aparece porque el ejecutable no está firmado y por la técnica de inyección.
+No es un virus: el código es abierto y puedes revisar exactamente qué hace. El aviso aparece porque el ejecutable no está firmado y por la técnica de inyección.
 
 ---
 
@@ -44,7 +44,7 @@ Usa la API de Windows `SetWindowDisplayAffinity` con el flag `WDA_EXCLUDEFROMCAP
 ## Compilar desde el código
 
 Requisitos:
-- **Rust** (usa el toolchain *nightly*, que se fija solo vía `rust-toolchain.toml`).
+- **Rust** (usa el toolchain *nightly*, que se fija solo mediante `rust-toolchain.toml`).
 - **Build Tools de C++** de Visual Studio (para el linker MSVC).
 - El target de 32 bits: `rustup target add i686-pc-windows-msvc`.
 
